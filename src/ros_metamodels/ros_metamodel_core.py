@@ -150,7 +150,7 @@ class Parameter(object):
 
     def get_type_from_value(self, value):
         param_type = type(value)
-        param_type = (str(param_type)).replace("<type '", "").replace("'>", "")
+        param_type = (str(param_type)).replace("<type '", "").replace("<class  '", "").replace("'>", "")
         if param_type == 'float':
             return 'Double'
         elif param_type == 'bool':

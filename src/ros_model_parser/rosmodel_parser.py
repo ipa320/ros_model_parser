@@ -186,7 +186,6 @@ if __name__ == "__main__":
     parser = RosModelParser(path)
     try:
         print(parser.parse().dump())
-        # print(parser.parse().interfaces[2].services)
     except Exception as e:
         print(e.args)
 
